@@ -1,0 +1,132 @@
+body {
+    background: #999;
+}
+div {
+    display: flex;
+}
+
+div#main {
+    display: block;
+}
+
+div.container {
+    width: 32%;
+    background: #555;
+    padding: 10px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 10px auto;
+    border: 2px solid #000;
+    
+}
+
+input#display {
+    width: 100%;
+    height: 65px;
+    font-size: 2.5em;
+    margin: 10px 0px 15px 0px;
+    padding: 5px;
+    border: 2px solid #000;
+    background: #bbb;
+    text-align: right;
+    color: #000;
+    
+}
+
+div.numeric {
+    width: 60%;
+    flex-wrap: wrap;
+}
+
+div.numeric button {
+    width: 31%;
+    height: 24%;
+    padding: 10px;
+    margin: .35%;
+    font-size: 1.3em;
+}
+
+div.function {
+    width: 40%;
+    flex-wrap: wrap;
+}
+
+div.clear, div.arithmetic {
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+div.function button {
+    width: 48.5%;
+    height: 50px;
+    padding: 10px;
+    margin: .35%;
+    font-size: 1.3em;
+}
+
+div.numeric .zero {
+    width: 62.66%;
+}
+
+div.arithmetic #equal {
+    width: 97.5%;
+}
+
+button {
+    background: #343434;
+    color: #fff;
+    border: none;
+}
+
+.clear button {
+    background: #700;
+}
+
+.arithmetic button {
+    background: #020;
+}
+
+button:hover {
+    background-color: #066;
+    font-weight: bold;
+}
+
+div.feature {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #122;
+}
+
+.feature h3 {
+    font-size: 1.4em;
+    margin: 10px 20px;
+    color: #ccc;
+}
+
+.feature li {
+    font-size: 1.2em;
+    color: #ccc;
+    padding: 5px;
+}
+
+.feature li span {
+    display: inline-block;
+    width: 30px;
+    height: 20px;
+    margin: 0px 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.feature .arithmetic {
+    background-color: #020;
+}
+
+.feature .clear {
+    background-color: #700;
+}
+
+.feature .point {
+    background-color: #343434;
+}

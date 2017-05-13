@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="calc" class="container">
+            <input type="text" id="display" class="item" disabled="disabled" placeholder="0" maxlength="15">
+            <div class="numeric">
+                <button id="7" onclick="number(this)">7</button>
+                <button id="8" onclick="number(this)">8</button>
+                <button id="9" onclick="number(this)">9</button>
+                <button id="4" onclick="number(this)">4</button>
+                <button id="5" onclick="number(this)">5</button>
+                <button id="6" onclick="number(this)">6</button>
+                <button id="1" onclick="number(this)">1</button>
+                <button id="2" onclick="number(this)">2</button>
+                <button id="3" onclick="number(this)">3</button>
+                <button id="0" class="zero" onclick="number(this)">0</button>
+
+                <button id="dot" onclick="number(this)">.</button>
+            </div>
+            <div class="function">
+                <div class="clear">
+                    <button id="clear" onclick="back()">ᐊ</button>
+                    <button id="allclear" onclick="allClear()">AC</button>
+                </div>
+
+                <div class="arithmetic">
+                    <button id="multiply" onclick="multiply()">*</button>
+                    <button id="devide" onclick="devide()">/</button>
+                    <button id="add" onclick="add()">+</button>
+                    <button id="subtract" onclick="subtract()">-</button>
+                    <button id="equal" onclick="equal()">=</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="feature">
+            <h3>Features:</h3>
+            <ul>
+                <li>Continuous calculation is working like: { 23 <span class="arithmetic">+</span> 3.4 <span class="arithmetic">+</span> 6.2 <span class="arithmetic">+</span> 11 <span class="arithmetic">=</span> } will give perfect result.</li>
+                
+                <li>Mix operations are working, just press the respected operation button after getting result of previous operation Like: {add 3 <span class="arithmetic">+</span> 7 <span class="arithmetic">=</span>} now if you wanna devide from result just press <span class="arithmetic">/</span> and Continue...</li>
+                
+                <li>Only sigle <span class="point">.</span> is allowed.</li>
+                
+                <li>Multiple press of same Arithmetics button like: { put 34 (can be any value), press <span class="arithmetic">+</span><span class="arithmetic">+</span><span class="arithmetic">+</span>} do not effect on calculation.</li>
+                
+                <li><span class="clear">ᐊ</span> button deletes last value</li>
+                
+                <li><span class="clear">AC</span> button reset the calculator.</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
